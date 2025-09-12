@@ -1,0 +1,22 @@
+{
+  "name": "merl",
+  "version": "1.0.0",
+  "author": "Tally",
+  "license": "ISC",
+  "description": "I don't know",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node --env-file=.env ./dist/index.js",
+    "watch": "tsc --watch --project tsconfig.json",
+    "serve": "nodemon --env-file=.env ./dist/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "nodemon": "^3.0.0",
+    "typescript": "^5.9.2"
+  },
+  "type": "module"
+}
