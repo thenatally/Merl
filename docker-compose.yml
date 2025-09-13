@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  merl:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    container_name: merl

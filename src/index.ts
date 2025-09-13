@@ -1,10 +1,6 @@
 import { Client, GatewayIntentBits, Partials, Events } from "discord.js";
 
 const token = process.env.BOT_TOKEN;
-if (!token) {
-  console.error("Please set BOT_TOKEN.");
-  process.exit(1);
-}
 
 const client = new Client({
   intents: [
